@@ -3,11 +3,15 @@
 [![Build Status](https://github.com/matz/streem/workflows/ci/badge.svg)](https://github.com/matz/streem/actions?query=workflow%3Aci)
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/matz/streem?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Streem is a stream based concurrent scripting language. It is based on a
+Streem is a stream-based concurrent scripting language. It is based on a
 programming model similar to the shell, with influences from Ruby, Erlang, and
 other functional programming languages.
 
 __Note:__ Streem is still in the design stage. It's not working yet. Stay tuned.
+
+## Streem documentation
+
+The Streem documentation is available [doc](online). It covers usage, language features, standard and math libraries.
 
 ## Compiling
 
