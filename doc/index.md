@@ -1,3 +1,12 @@
+# Streem documentation
+
+## Language
+
+[usage](usage.md)
+[language](language.md)
+
 ## Library
 
-[math](https://github.com/matz/streem/doc/library/math.md)
+[standard](library/standard.md)
+[math](library/math.md)
+
