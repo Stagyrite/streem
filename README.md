@@ -11,7 +11,7 @@ __Note:__ Streem is still in the design stage. It's not working yet. Stay tuned.
 
 ## Streem documentation
 
-The Streem documentation is available [doc](online). It covers usage, language features, standard and math libraries.
+The Streem documentation is available [online](doc). It covers usage, language features, standard and math libraries.
 
 ## Compiling
 
