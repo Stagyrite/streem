@@ -1,6 +1,6 @@
 # Language
 
-Streem language consists of constants, variables, operators, etc.
+The Stream language consists of constants, variables, operators, and other elements.
 
 ## Code comments
 
@@ -39,6 +39,45 @@ s = "HELLO, world"
 ```
 
 TODO: array, concept of stream, print using stream
+
+## Arithmetic expressions
+
+Use the basic arithmetic operators to perform computations.
+
+| Operator | What is? |
+| :---: | :---: |
+| + | sum |
+| - | difference |
+| * | multiplication |
+| / | division (float) |
+| % | remainder |
+
+```shell
+x_1 = 2 + 3 # 5
+x_2 = x_1 * 4 # 20
+x_3 = x_2 / 4 # 5
+x_4 = x_3 - 3 # 2
+x_5 = x_4 % 2 # 2
+[x_1, x_2, x_3, x_4, x_5] | stdout
+
+# Output:
+# 5
+# 20
+# 5
+# 2
+# 0
+```
+
+## Parentheses
+
+You can enclose expressions in brackets to formulate more complex expressions.
+
+```shell
+# Output: 20
+
+x = (2 + 3) * 4
+[x] | stdout
+```
 
 ## if statements
 
