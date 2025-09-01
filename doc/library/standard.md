@@ -66,6 +66,40 @@ Terminates with a specified value. Useful in Shell scripts.
 # Output: success
 ```
 
+### zip() - zip two streams
+
+Creates a quasi-dictionary structure that consists of the keys given in the left argument and values in the right argument.
+Both arguments are arrays. The output array consists of an array of two-element arrays. The first is the key, and the second is the value.
+
+```shell
+rows = [["cell_1", "cell_2", "cell_3"],
+        ["cell_4", "cell_5", "cell_6"],
+        ["cell_7", "cell_8", "cell_9"]]
+columns = ["column_1", "column_2", "column_3"]
+zip(columns, rows) | stdout
+
+# Output:
+# ["column_1", ["cell_1", "cell_2", "cell_3"]]
+# ["column_2", ["cell_4", "cell_5", "cell_6"]]
+# ["column_3", ["cell_7", "cell_8", "cell_9"]]
+```
+
+### & - zip two arrays
+
+The & operator is an alias to the zip() function.
+
+```shell
+seq(3) & seq(3) | stdout
+[1, 1]
+[2, 2]
+[3, 3]
+
+# Output:
+# [1, 1]
+# [2, 2]
+# [3, 3]
+```
+
 ### Streaming bar graph
 
 A trivial example that counts down from 3 to 0.
