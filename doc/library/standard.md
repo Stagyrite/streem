@@ -14,7 +14,9 @@ The 'stdin', 'stdout' and 'stderr' are file descriptors used for the standard I/
 
 The puts() function can be used for printing to standard output.
 
-```ruby
+#### ./hello-world.strm
+
+```shell
 # Output: HELLO, world
 s = "HELLO, world"
 puts(s)
@@ -30,7 +32,9 @@ Stream contains a variety of built-in functions. Note that functions tend to ret
 
 An array can be reversed using a 'reverse' function. Instead of a new array, a stream is created.
 
-```ruby
+#### ./countdown.strm
+
+```shell
 x = [1, 2, 3]
 reverse(x) | stdout
 # Output:
@@ -43,7 +47,9 @@ reverse(x) | stdout
 
 To produce a sequence of numbers (1, 2, 3, ..., n) for a given n, call the 'seq' function.
 
-```ruby
+#### ./counter.strm
+
+```shell
 seq(3) | stdout
 
 # Output:
@@ -56,10 +62,14 @@ seq(3) | stdout
 
 Terminates with a specified value. Useful in Shell scripts.
 
+#### ./success.strm
+
 ```shell
 ./streem -e "exit(1)" || echo "failure"
 # Output: failure
 ```
+
+#### ./failure.strm
 
 ```shell
 ./streem -e "exit(0)" && echo "success"
@@ -70,6 +80,8 @@ Terminates with a specified value. Useful in Shell scripts.
 
 Creates a quasi-dictionary structure that consists of the keys given in the left argument and values in the right argument.
 Both arguments are arrays. The output array consists of an array of two-element arrays. The first is the key, and the second is the value.
+
+### ./sheet.strm
 
 ```shell
 rows = [["cell_1", "cell_2", "cell_3"],
@@ -86,6 +98,8 @@ zip(columns, rows) | stdout
 
 ### & - zip two arrays
 
+#### ./matrix.strm
+
 The & operator is an alias to the zip() function.
 
 ```shell
@@ -100,18 +114,42 @@ seq(3) & seq(3) | stdout
 # [3, 3]
 ```
 
+### ./bio.strm
+
+You can zip streams as well, not just arrays.
+
+#### ./zip-with-counter.strm
+
+```shell
+# Input:
+# HELLO,
+# @stagyrite
+# 🐍
+
+stdin & seq(3) | stdout
+
+# Output:
+# ["HELLO,", 1]
+# ["@stagyrite", 2]
+# ["🐍", 3]
+```
+
 ### Streaming bar graph
 
 A trivial example that counts down from 3 to 0.
 
-```ruby
+#### ./stag-countdown.strm
+
+```shell
 graph = graph_bar()
 [3, 2, 1, 0] | graph
 ```
 
 It fills it with numbers from the range 1 to 250.
 
-```ruby
+#### stag-linear.strm
+
+```shell
 graph = graph_bar()
 seq(250) | graph
 ```
