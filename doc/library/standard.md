@@ -98,9 +98,9 @@ zip(columns, rows) | stdout
 
 ### & - zip two arrays
 
-#### ./matrix.strm
-
 The & operator is an alias to the zip() function.
+
+#### ./matrix.strm
 
 ```shell
 seq(3) & seq(3) | stdout
@@ -145,7 +145,7 @@ graph = graph_bar()
 [3, 2, 1, 0] | graph
 ```
 
-It fills it with numbers from the range 1 to 250.
+It can be filled with numbers from the range 1 to 250.
 
 #### stag-linear.strm
 
