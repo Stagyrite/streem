@@ -114,11 +114,9 @@ seq(3) & seq(3) | stdout
 # [3, 3]
 ```
 
-### ./bio.strm
+### ./zip-with-counter.strm
 
 You can zip streams as well, not just arrays.
-
-#### ./zip-with-counter.strm
 
 ```shell
 # Input:
