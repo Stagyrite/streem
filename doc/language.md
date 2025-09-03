@@ -24,6 +24,24 @@ All code comments are prefixed with a hash.
 | stdin, stdout etc | file descriptor |
 | x \| y | x can be a stream |
 
+## Standard output with streams
+
+It's possible to pipe an array into standard output without calling a function. Just use the bar operator. This construct
+will be used in the sections covering the language features. Calling 'print()' or 'puts()' can be preferred elsewhere.
+
+#### ./hobbies.strm
+
+```shell
+["yoga", "Tai Chi", "Qigong", "foreign languages", "atheism"] | stdout
+
+# Output:
+# yoga
+# Tai Chi
+# Qigong
+# foreign languages
+# atheism
+```
+
 ## Assigning a variable
 
 Here's how to assign the 42 value to variable x.
