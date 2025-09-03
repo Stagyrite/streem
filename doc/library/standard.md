@@ -10,6 +10,8 @@ The 'stdin', 'stdout' and 'stderr' are file descriptors used for the standard I/
 
 ## Built-in functions
 
+Stream contains a variety of built-in functions.  Note that they can return streams.
+
 ### puts() - print a string to standard output
 
 The puts() function can be used for printing to standard output.
@@ -25,8 +27,6 @@ puts(s)
 ### print() - print to standard output
 
 The print() function is an alias to the puts() function.
-
-Stream contains a variety of built-in functions. Note that functions tend to return streams.
 
 ### Reverse an array
 
