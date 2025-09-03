@@ -32,14 +32,15 @@ will be used in the sections covering the language features. Calling 'print()' o
 #### ./hobbies.strm
 
 ```shell
-["yoga", "Tai Chi", "Qigong", "foreign languages", "atheism"] | stdout
+hobbies = ["yoga", "Tai Chi", "Qigong", "foreign languages", "my blog"]
+hobbies | stdout
 
 # Output:
 # yoga
 # Tai Chi
 # Qigong
 # foreign languages
-# atheism
+# my blog
 ```
 
 ## Assigning a variable
