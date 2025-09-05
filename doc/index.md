@@ -2,14 +2,14 @@
 
 ## Language
 
-[usage](usage.md)
+1. [usage](usage.md)
+1. [language](language.md)
 
-[language](language.md)
+## Libraries
 
-## Library
+1. [standard](library/standard.md)
+1. [time](library/time.md)
+1. [math](library/math.md)
 
-[standard](library/standard.md)
-
-[math](library/math.md)
 
 
