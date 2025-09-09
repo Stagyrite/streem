@@ -33,7 +33,7 @@ in_five_minutes = current + 5
 
 ### - - subtract minutes from time
 
-Given a return value of a now() function call, I can move it forward by using the plus operator.
+Given a return value of a now() function call, I can move it backwards by using the minus operator.
 
 #### ./before-five-minutes.strm
 
