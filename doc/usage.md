@@ -10,7 +10,7 @@ Start ./streem and input your program that ends with EOF.
 
 Provide a path to a Streem program as an argument. The filename should end with '.strm'.
 
-```shell
+```ruby
 ./streem hello_world.strm
 ```
 
@@ -18,7 +18,7 @@ Provide a path to a Streem program as an argument. The filename should end with 
 
 Execute one-liners by using the 'e' option.
 
-```shell
+```ruby
 ./streem -e 'print("HELLO, shell")'
 # Output: HELLO, shell
 ```

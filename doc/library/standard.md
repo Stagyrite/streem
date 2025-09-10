@@ -18,7 +18,7 @@ The puts() function can be used for printing to standard output.
 
 #### ./hello-world.strm
 
-```shell
+```ruby
 # Output: HELLO, world
 s = "HELLO, world"
 puts(s)
@@ -34,7 +34,7 @@ An array can be reversed using a 'reverse' function. Instead of a new array, a s
 
 #### ./countdown.strm
 
-```shell
+```ruby
 x = [1, 2, 3]
 reverse(x) | stdout
 # Output:
@@ -49,7 +49,7 @@ To produce a sequence of numbers (1, 2, 3, ..., n) for a given n, call the 'seq'
 
 #### ./counter.strm
 
-```shell
+```ruby
 seq(3) | stdout
 
 # Output:
@@ -64,14 +64,14 @@ Terminates with a specified value. Useful in Shell scripts.
 
 #### ./success.strm
 
-```shell
+```ruby
 ./streem -e "exit(1)" || echo "failure"
 # Output: failure
 ```
 
 #### ./failure.strm
 
-```shell
+```ruby
 ./streem -e "exit(0)" && echo "success"
 # Output: success
 ```
@@ -83,7 +83,7 @@ Both arguments are arrays. The output array consists of an array of two-element 
 
 ### ./sheet.strm
 
-```shell
+```ruby
 rows = [["cell_1", "cell_2", "cell_3"],
         ["cell_4", "cell_5", "cell_6"],
         ["cell_7", "cell_8", "cell_9"]]
@@ -102,7 +102,7 @@ The & operator is an alias to the zip() function.
 
 #### ./matrix.strm
 
-```shell
+```ruby
 seq(3) & seq(3) | stdout
 [1, 1]
 [2, 2]
@@ -118,7 +118,7 @@ seq(3) & seq(3) | stdout
 
 You can zip streams as well, not just arrays.
 
-```shell
+```ruby
 # Input:
 # HELLO,
 # @stagyrite
@@ -138,7 +138,7 @@ A trivial example that counts down from 3 to 0.
 
 #### ./stag-countdown.strm
 
-```shell
+```ruby
 graph = graph_bar()
 [3, 2, 1, 0] | graph
 ```
@@ -147,7 +147,7 @@ It can be filled with numbers from the range 1 to 250.
 
 #### stag-linear.strm
 
-```shell
+```ruby
 graph = graph_bar()
 seq(250) | graph
 ```

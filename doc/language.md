@@ -31,7 +31,7 @@ will be used in the sections covering the language features. Calling 'print()' o
 
 #### ./hobbies.strm
 
-```shell
+```ruby
 hobbies = ["yoga", "Tai Chi", "Qigong", "foreign languages", "my blog"]
 hobbies | stdout
 
@@ -71,7 +71,7 @@ Use the basic arithmetic operators to perform computations.
 | / | division (float) |
 | % | remainder |
 
-```shell
+```ruby
 x_1 = 2 + 3 # 5
 x_2 = x_1 * 4 # 20
 x_3 = x_2 / 4 # 5
@@ -91,7 +91,7 @@ x_5 = x_4 % 2 # 2
 
 You can enclose expressions in brackets to formulate more complex expressions.
 
-```shell
+```ruby
 # Output: 20
 
 x = (2 + 3) * 4

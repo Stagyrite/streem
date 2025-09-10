@@ -10,7 +10,7 @@ Returns the current system date and time in ISO format.
 
 The current date and time in this example depend on the system clock.
 
-```shell
+```ruby
 datetime = now()
 [datetime] | stdout
 # Output: 2025.09.05T16:03:38.323+01:00
@@ -22,7 +22,7 @@ Given a return value of a now() function call, I can move it forward by using th
 
 #### ./in-five-minutes.strm
 
-```shell
+```ruby
 current = now()
 in_five_minutes = current + 5
 [current, in_five_minutes] | stdout
@@ -37,7 +37,7 @@ Given a return value of a now() function call, I can move it backwards by using 
 
 #### ./before-five-minutes.strm
 
-```shell
+```ruby
 current = now()
 before_five_minutes = current - 5
 [current, before_five_minutes] | stdout
