@@ -1,6 +1,6 @@
 # Language
 
-The Stream language consists of constants, variables, operators, and other elements.
+The Streem language consists of constants, variables, operators, and other elements.
 
 ## Code comments
 
