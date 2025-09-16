@@ -151,3 +151,26 @@ It can be filled with numbers from the range 1 to 250.
 graph = graph_bar()
 seq(250) | graph
 ```
+
+### Random numbers
+
+There's an ability to generate random numbers.
+
+#### rand_seed() - generate a random seed
+
+It generates a string that can be used as a random seed.
+
+#### rand() - instantiate a stream of random numbers
+
+It takes one argument, which is a random seed. If no arguments are provided, it uses a randomly generated seed.
+
+It starts to emit floating-point numbers. e.g., 0.978470, 0.396758, 0.241088, etc.
+
+#### rand_norm() - instantiate a streem of normal (or Gaussian) random numbers
+
+Generate Gaussian noise using the Marsaglia polar method.
+
+#### sample() - retrieves a sample of data
+
+Pass a number n to retrieve the n-th element from a stream.
+
