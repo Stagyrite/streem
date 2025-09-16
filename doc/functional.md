@@ -19,3 +19,17 @@ array | predicate | stdout
 # 400
 # 500
 ```
+
+## take() - take some elements from a stream
+
+Instantiates a new stream that consists of some elements from an input stream. The number of elements is passed as an argument.
+
+```ruby
+random = [0.978470, 0.396758, 0.241088, 0.543190, 0.598714, 0.451562, 0.944703]
+random | take(3) | stdout
+
+# Output:
+# 0.97847
+# 0.396758
+# 0.241088
+```
