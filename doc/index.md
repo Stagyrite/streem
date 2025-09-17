@@ -1,6 +1,6 @@
 # Streem documentation
 
-### Two cows
+## ASCII picture
 
 ```
  _________________________________________
@@ -31,5 +31,6 @@
 1. [time](library/time.md)
 1. [math](library/math.md)
 1. [key-value store](library/kvs.md)
+
 
 
