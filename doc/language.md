@@ -87,6 +87,12 @@ x_5 = x_4 % 2 # 2
 # 0
 ```
 
+## Logical expressions
+
+> Logical operators are not implemented. Source code that uses them won't parse.
+
+There's an '||' operator for logical "or", and '&&' operator for logical "and".
+
 ## Parentheses
 
 You can enclose expressions in brackets to formulate more complex expressions.
