@@ -154,6 +154,8 @@ seq(250) | graph
 
 ### Random numbers
 
+> The random number generator is not fully implemented. Random numbers can be acquired only by modifying the source code.
+
 There's an ability to generate random numbers.
 
 #### rand_seed() - generate a random seed
