@@ -176,3 +176,17 @@ Generate Gaussian noise using the Marsaglia polar method.
 
 Pass a number n to retrieve the n-th element from a stream.
 
+### String manipulation
+
+Strings can be transformed and manipulated with a set of built-in functions.
+
+#### number() - converts a string to a number
+
+You need to parse out an integer or a floating-point number from a string, possibly user input. The 'number()' function returns a number that can be used with mathematical operators.
+
+```ruby
+# Output: 58
+eight = number("8")
+seven = number("7.0")
+puts(eight * seven)
+```
