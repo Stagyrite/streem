@@ -99,7 +99,7 @@ x_5 = x_4 % 2 # 2
 
 > Logical operators are not implemented. Source code that uses them won't parse.
 
-There's an '||' operator for logical "or", and '&&' operator for logical "and".
+There's an '\|\|' operator for logical "or", and '&&' operator for logical "and".
 
 ## Parentheses
 
