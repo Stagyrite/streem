@@ -30,11 +30,12 @@ All code comments are prefixed with a hash.
 
 It's possible to pipe an array into standard output without calling a function. Just use the bar operator. This construct
 will be used in the sections covering the language features. Calling 'print()' or 'puts()' can be preferred elsewhere.
+The elements are placed vertically on a screen, i.e., they are separated with a new line character.
 
 #### ./streem hobbies.strm
 
 ```ruby
-hobbies = ["yoga", "Tai Chi", "Qigong", "foreign languages", "my blog"]
+hobbies = ["yoga", "Tai Chi", "Qigong", "foreign languages", "Streem"]
 hobbies | stdout
 
 # Output:
@@ -42,7 +43,7 @@ hobbies | stdout
 # Tai Chi
 # Qigong
 # foreign languages
-# my blog
+# Streem
 ```
 
 ## Assigning a variable
