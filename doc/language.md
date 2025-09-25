@@ -218,3 +218,36 @@ puts(addz(a, b, 1))
 # 1111111110
 # 1111111111
 ```
+
+### Pattern matching
+
+There's a pattern matching for functions. It's a functionality similar to a switch statement in non-prototypical languages. The "case" expression has to return a value depending on whether the two passed arguments match. The underscore can be used for default cases. Variables and string literals can be passed as arguments.
+
+### ./streem match.strm
+
+Tests whether an input animal is a cat.
+
+```ruby
+# Input:
+# elephant
+# cat
+# dog
+# kitty
+
+matches = {
+    case "kitty", "cat"   -> true  # match
+    case "cat", "kitty"   -> true  # match
+    case "doggie", "dog"  -> true  # match
+    case "dog", "doggie"  -> true  # match
+    case x, x             -> true  # identical
+	case _, _             -> false # no match
+}
+
+stdin | map { x -> matches("cat", x) } | stdout
+
+# Output:
+# false
+# true
+# false
+# true
+```
