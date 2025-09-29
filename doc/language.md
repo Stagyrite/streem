@@ -186,6 +186,15 @@ Functions are defined within the curly brackets in a lambda-expression manner. A
 ### ./streem hello-world-function.strm
 
 ```ruby
+# Output: HELLO
+hello = () -> { "HELLO" }
+s = hello()
+print(s)
+```
+
+### ./streem hello-world-function-with-arguments.strm
+
+```ruby
 # Output: HELLO, world
 hello = { name ->
 	"HELLO, " + name
@@ -251,3 +260,25 @@ stdin | map { x -> matches("cat", x) } | stdout
 # false
 # true
 ```
+
+### Namespaces
+
+Namespaces are structures that consist of variables and functions that can be imported and used. An unimported namespace can't be used. They can be used for greater clarity and to group data.
+
+### ./strm highlander.strm
+
+```ruby
+# Output:
+# There can be only one
+# There can be only one.
+
+namespace highlander {
+	tagline = "There can be only one"
+	taglineDot = () -> { tagline + "." }
+}
+
+import highlander
+print(tagline)
+print(taglineDot())
+```
+
