@@ -282,3 +282,19 @@ print(tagline)
 print(taglineDot())
 ```
 
+#### Classes
+
+Classes are identical to namespaces, although one could expect to instantiate objects with them. You can import them and use their read-only content.
+
+### ./strm rpg.strm
+
+```ruby
+# Output: 19
+
+class player {
+	hp = 19
+}
+
+import player
+[hp] | stdout
+```
