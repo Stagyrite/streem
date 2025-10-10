@@ -33,3 +33,20 @@ random | take(3) | stdout
 # 0.396758
 # 0.241088
 ```
+
+## flatmap - flattens the input stream
+
+You can make an array out of a matrix (array of arrays) by calling 'flatmap()'. Just pass the identity function as its argument, i.e. the '{ x -> x }' lambda expression. Note that the 'x' variable in the expression is by itself a stream.
+
+```ruby
+matrix = [[1, 2], [3, 4]]
+identity = { x -> x }
+matrix | flatmap(identity) | stdout
+
+# Output:
+# 1
+# 2
+# 3
+# 4
+```
+
