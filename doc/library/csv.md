@@ -23,13 +23,13 @@ It can be read, and all values are piped to the standard output.
 
 ```ruby
 data = csv()
-["id,string,string,time,time"] | data
+["integer,string,string,time,time"] | data
 stream = fread("medicines.csv") | data
 stream | stdout
 
 # Output:
-# ["id", "string", "string", "time", "time"]
-# [id:"id", string:"social security number", string:"medicine", time:"start date", time:"end date"]
+# ["integer", "string", "string", "time", "time"]
+# [integer:"integer", string:"social security number", string:"medicine", time:"start date", time:"end date"]
 # ["1", "01010111111", "vitamin bears", "20250822", "20251128"]
 # ["2", "22020222222", "fluoride tablets", "20250111", ""]
 # ["3", "01010111111", "cod liver oil", "20250601", "20250630"]
