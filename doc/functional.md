@@ -78,3 +78,29 @@ In this example, the sequence of numbers from 1 to 50 is summed. It can be done 
 
 seq(50) | reduce { x, y -> x + y } | stdout
 ```
+
+## each - do for each element in a stream
+
+For each element in an input stream, you can execute a function. There's no output stream required.
+
+### ./streem five.strm
+
+This checks whether the passed argument is 3. It prints "true" if yes. Otherwise, it prints "false".
+
+```ruby
+# Input:
+# 2
+# 2
+# 2
+# 3
+# 2
+
+stdin | each { x -> puts(number(x) == 3) }
+
+# Output:
+# false
+# false
+# false
+# true
+# false
+```
