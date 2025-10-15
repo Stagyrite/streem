@@ -50,3 +50,31 @@ matrix | flatmap(identity) | stdout
 # 4
 ```
 
+## Sequence of numbers
+
+To produce a sequence of numbers (1, 2, 3, ..., n) for a given n, call the 'seq' function.
+
+### ./counter.strm
+
+```ruby
+seq(3) | stdout
+
+# Output:
+# 1
+# 2
+# 3
+```
+
+## reduce - reduce a stream to an object
+
+To reduce a stream, pass the reduction function as the 'reduce' function argument.
+
+### ./streem sum-numbers.strm
+
+In this example, the sequence of numbers from 1 to 50 is summed. It can be done using a mathematical theorem, and the result is 1275. The Streem function that does it is '{ x -> x * (x + 1) / 2 }'.
+
+```ruby
+# Output: 1275
+
+seq(50) | reduce { x, y -> x + y } | stdout
+```
