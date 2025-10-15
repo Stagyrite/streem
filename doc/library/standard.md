@@ -43,21 +43,6 @@ reverse(x) | stdout
 # 1
 ```
 
-### Sequence of numbers
-
-To produce a sequence of numbers (1, 2, 3, ..., n) for a given n, call the 'seq' function.
-
-#### ./counter.strm
-
-```ruby
-seq(3) | stdout
-
-# Output:
-# 1
-# 2
-# 3
-```
-
 ### exit(status)
 
 Terminates with a specified value. Useful in Shell scripts.
