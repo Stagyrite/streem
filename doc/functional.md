@@ -1,6 +1,6 @@
 # Functional programming
 
-Functions are provided to use typical functional programming.
+Functions are provided to use typical functional programming. It's actually a kind of iterative programming.
 
 ## filter() - filters a stream
 
