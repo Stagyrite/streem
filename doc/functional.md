@@ -113,6 +113,8 @@ You need to push several elements to a current stream. Make subsequent calls to 
 
 This example emits $x^{2}$,  $x^{3}$ and $x^{4}$ with the input sequence 4, 5 and 6.
 
+A kind of equivalent function would yield an array of powers, and then flatten the matrix (array of arrays) produced. It's obviously better to push the powers immediately into the output stream.
+
 ```ruby
 powers = { x ->
   pow2 = x * x
