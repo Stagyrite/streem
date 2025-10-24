@@ -104,3 +104,35 @@ stdin | each { x -> puts(number(x) == 3) }
 # true
 # false
 ```
+
+## emit - emits some elements to a stream
+
+You need to push several elements to a current stream. Make subsequent calls to the 'emit()' function, passing the return values as subsequent arguments. Wrap the calls into a function and pass it to the 'each()' function, or some other function of choice.
+
+### ./streem powers.strm
+
+This example emits $x^{2}$,  $x^{3}$ and $x^{4}$ with the input sequence 4, 5 and 6.
+
+```ruby
+powers = { x ->
+  pow2 = x * x
+  pow3 = pow2 * x
+  pow4 = pow3 * x
+  emit(pow2)
+  emit(pow3)
+  emit(pow4)
+}
+
+[4, 5, 6] | each(powers) | stdout
+
+# Output:
+# 16
+# 64
+# 256
+# 25
+# 125
+# 625
+# 36
+# 216
+# 1296
+```
